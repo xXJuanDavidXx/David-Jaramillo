@@ -100,42 +100,128 @@
 <hr>
 <!-- Skills Section -->
 <section class="py-5 bg-black" id="skills">
-  <div class="container">
-    <h2 class="text-center display-3 fw-bold mb-5">Habilidades Técnicas</h2>
-    <div class="row g-4">
-      <div class="col-md-4">
-        <div class="card card-b h-100 border-0 shadow-sm bg-transparent">
-          <div class="card-body text-center">
+        <style>
+        .skills-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem; /* espacio entre íconos */
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.skills-icons div {
+  flex: 1 1 200px;
+  max-width: 250px;
+}
+
+.skills-icons i {
+  display: block;
+  color: var(--text-primary);
+}
+
+.skills-tags {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem; /* espacio horizontal y vertical entre chips */
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+     .card-body {
+  padding-bottom: 4rem; /* da más espacio al final */
+}
+
+.skill-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem; /* espacio entre logo y texto */
+  padding: 0.4rem 0.7rem;
+}
+
+  
+.skill-chip .tech-icon {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+}
+        </style>
+  <div class="container text-center">
+    <h2 class="display-3 fw-bold mb-5">Habilidades Técnicas</h2>
+
+    <div class="card card-b border-0 shadow-sm bg-transparent mx-auto" style="max-width: 1200px;">
+      <div class="card-body">
+
+        <!-- Bloque de íconos -->
+        <div class="skills-icons">
+          <div>
             <i class="fas fa-code fa-3x mb-3" aria-hidden="true"></i>
             <h4><strong>Programación</strong></h4>
-            <p>Python (especialidad), Django, JavaScript, C#, Bash</p>
           </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card card-b h-100 border-0 shadow-sm bg-transparent">
-          <div class="card-body text-center">
+          <div>
             <i class="fas fa-shield-alt fa-3x mb-3"></i>
             <h4><strong>Ciberseguridad</strong></h4>
-          <p>Pentesting, criptografía, seguridad de los datos, hardening, redes, IDS/IPS, WAF, EDR/HIDS, SOC/SIEM.</p>
-
-                </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card card-b h-100 border-0 shadow-sm bg-transparent">
-          <div class="card-body text-center">
+          </div>
+          <div>
             <i class="fas fa-server fa-3x mb-3"></i>
             <h4><strong>Administración de Sistemas</strong></h4>
-            <p>Linux (3+ años), VPS, Docker, docker-compose, Nginx, Apache, Uvicorn, Gunicorn, Render, Fly.io, Github Pages, GitHub Actions (básico), seguridad y hardening de servidores</p>
           </div>
         </div>
+
+        <!-- Bloque de tecnologías -->
+        <div class="skills-tags">
+<div class="skills-tags">
+  <span class="badge rounded-pill bg-light text-dark me-1 skill-chip">
+    <img src="/static/icons/python.svg" alt="Python" class="tech-icon"> Python
+  </span>
+  <span class="badge rounded-pill bg-light text-dark me-1 skill-chip">
+    <img src="/static/icons/django.svg" alt="#" class="tech-icon"> Django
+  </span>
+  <span class="badge rounded-pill bg-light text-dark me-1 skill-chip">
+    <img src="/static/icons/javascript.svg" alt="#" class="tech-icon"> JavaScript
+  </span>
+  <span class="badge rounded-pill bg-light text-dark me-1 skill-chip">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-plain.svg" alt="#" class="tech-icon"/>         C#
+  </span>
+  <span class="badge rounded-pill bg-light text-dark me-1 skill-chip">
+    <i class="fas fa-terminal me-1"></i> Bash
+  </span>
+</div>
+          <span class="badge rounded-pill bg-light text-dark skill-chip">Pentesting</span>
+          <span class="badge rounded-pill bg-light text-dark skill-chip">Criptografía</span>
+          <span class="badge rounded-pill bg-light text-dark skill-chip">Seguridad de los datos</span>
+          <span class="badge rounded-pill bg-light text-dark skill-chip">Hardening</span>
+          <span class="badge rounded-pill bg-light text-dark skill-chip">Redes</span>
+          <span class="badge rounded-pill bg-light text-dark skill-chip">IDS/IPS</span>
+          <span class="badge rounded-pill bg-light text-dark skill-chip">WAF</span>
+          <span class="badge rounded-pill bg-light text-dark skill-chip">EDR/HIDS</span>
+          <span class="badge rounded-pill bg-light text-dark skill-chip">SOC/SIEM</span>
+          <span class="badge rounded-pill bg-light text-dark skill-chip">Linux (3+ años)</span>
+          <span class="badge rounded-pill bg-light text-dark skill-chip">VPS</span>
+          <span class="badge rounded-pill bg-light text-dark skill-chip">Docker</span>
+          <span class="badge rounded-pill bg-light text-dark skill-chip">Nginx</span>
+          <span class="badge rounded-pill bg-light text-dark skill-chip">Apache</span>
+          <span class="badge rounded-pill bg-light text-dark skill-chip">Uvicorn</span>
+          <span class="badge rounded-pill bg-light text-dark skill-chip">Gunicorn</span>
+          <span class="badge rounded-pill bg-light text-dark skill-chip">Render</span>
+          <span class="badge rounded-pill bg-light text-dark skill-chip">Seguridad</span>
+          <span class="badge rounded-pill bg-light text-dark skill-chip">Hardening de servidores</span>
+                 </div>
+
       </div>
     </div>
   </div>
 </section>
 
-<!-- Portfolio Section -->
+      <!-- Portfolio Section -->
 <section class="py-5" id="proyectos">
   <style>
     .card-project {

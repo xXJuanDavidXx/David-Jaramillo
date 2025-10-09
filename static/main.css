@@ -146,15 +146,28 @@ h1, h2, h3 {
   opacity: 0.8;
 }
 
-.card-b:not(.blog-card):hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
 .card-b:not(.blog-card) i {
   color: var(--text-primary);
   -webkit-text-fill-color: initial;
   background: none;
+}
+
+.card-b .skill-chip i {
+  font-size: 1rem;
+  vertical-align: middle;
+  background: linear-gradient(
+    45deg,
+    var(--color-1),
+    var(--color-2),
+    var(--color-3),
+    var(--color-4),
+    var(--color-5)
+  );
+  background-size: 200% 200%;
+  animation: gradient 8s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 /* Añadir sombra al texto para mejor legibilidad */
