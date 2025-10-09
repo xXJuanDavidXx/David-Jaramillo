@@ -1,11 +1,14 @@
 /* Variables globales */
 :root {
-  --color-1: #FF6B6B;  /* Rojo coral */
-  --color-2: #4ECDC4;  /* Turquesa */
-  --color-3: #FFE66D;  /* Amarillo */
-  --color-4: #7F00FF;  /* Violeta */
-  --color-5: #00FF9F;  /* Verde neón */
-  --dark-bg: #0F0F1A;  /* Fondo más oscuro */
+ /* Dorado mágico — luz, poder arcano */
+ --color-1: #6B0F1A;  /* Carmesí arcano — profundo pero suave, transiciona bien con púrpuras */
+ --color-2: #4B0082;  /* Índigo profundo — base espiritual */
+ --color-3: #DAA520;  /* Oro místico — resplandor y energía */
+ --color-4: #7F00FF;  /* Violeta místico — magia pura */
+ --color-5: #2F1B69;  /* Púrpura oscuro — fondo y misterio */
+ --color-6: #B8860B;  /* Oro oscuro — toque antiguo, alquímico */
+ --color-7: #8B4513;  /* Marrón mágico — tierra y equilibrio */
+ --dark-bg: #0F0F1A;  /* Fondo más oscuro */
   --card-bg: #1A1A2E;
   --text-primary: #ffffff;
   --text-secondary: #e0e0e0;
