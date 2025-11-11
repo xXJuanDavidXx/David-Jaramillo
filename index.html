@@ -374,7 +374,7 @@
 
           <div class="col-md-4">
             <div class="card card-project bg-black border-0 shadow h-100">
-              <img src="media/portfolio/images/gestorcemrcial.webp" class="card-img-top" alt="Gestor Comercial" />
+              <img src="media/portfolio/images/gestorcemrcial.webp" class="card-img-top" alt="Gestor Comercial" data-bs-toggle="modal" data-bs-target="#VideoModal" style="cursor:pointer;"/>
               <div class="card-body d-flex flex-column">
                 <h2 class="h4 mb-3"><strong>Gestor Comercial</strong></h2>
                 <p class="text-white flex-grow-1">aplicación web para la administración de ventas e inventario, que
@@ -501,15 +501,71 @@
           </div>
 
 
+
+<div class="col-md-4">
+            <div class="card card-project bg-black border-0 shadow h-100">
+              <img src="media/portfolio/images/malware.jpg" class="card-img-top" alt="Gestor Comercial" data-bs-toggle="modal" data-bs-target="#VideoModal" style="cursor:pointer;"/>
+              <div class="card-body d-flex flex-column">
+                <h2 class="h4 mb-3"><strong>Evasion de antivirus</strong></h2>
+                <p class="text-white flex-grow-1">software experimental para pruebas de seguridad. No hay documentación pública mas que las pistas y referencias en el codigo. No se autoriza su uso con fines maliciosos</p>
+
+                <a href="https://github.com/xXJuanDavidXx/AvEvassion-PY"
+                  class="btn btn-primary rounded-pill mt-auto" target="_blank" rel="noreferrer"
+                  aria-label="Ver proyecto Gestor Comercial">
+                  <i class="fab fa-github fa-1x" aria-hidden="true"></i> Ver Proyecto
+                </a>
+
+              </div>
+            </div>
+          </div>
+
+
         </div>
       </div>
     </section>
 
-  </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+
+
+      <!--SECCION DE MODALES--->
+<!-- Modal -->
+<div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content bg-dark text-white">
+      <div class="modal-header">
+        <h5 class="modal-title" id="videoModalLabel">Demo Gestor Comercial</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body p-0">
+        <div class="ratio ratio-16x9">
+          <iframe id="videoFrame" src="" title="Demo Gestor Comercial"
+            allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  </div>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+
+   <script>document.addEventListener('DOMContentLoaded', function() {
+  var videoModal = document.getElementById('videoModal');
+  var videoFrame = document.getElementById('videoFrame');
+  var videoURL = "https://www.youtube.com/embed/TU_URL_AQUI?autoplay=1";
+
+  videoModal.addEventListener('show.bs.modal', function () {
+    videoFrame.src = videoURL;
+  });
+  videoModal.addEventListener('hidden.bs.modal', function () {
+    videoFrame.src = "media/portfolio/videos/v1.mp4";
+  });
+});</script>
+
   <!-- Prism.js JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
   <!-- Soporte para lenguajes específicos -->
